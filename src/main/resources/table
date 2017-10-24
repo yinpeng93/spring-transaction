@@ -1,0 +1,42 @@
+-- ----------------------------
+-- Table structure for tb_book
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_book`;
+CREATE TABLE `tb_book` (
+  `isbn` varchar(10) DEFAULT NULL,
+  `bookname` varchar(15) DEFAULT NULL,
+  `price` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_book
+-- ----------------------------
+INSERT INTO `tb_book` VALUES ('978-124-24', 'java入门', '20');
+
+-- ----------------------------
+-- Table structure for tb_account
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_account`;
+CREATE TABLE `tb_account` (
+  `username` varchar(10) DEFAULT NULL,
+  `balance` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_account
+-- ----------------------------
+INSERT INTO `tb_account` VALUES ('zs', '50');
+
+-- ----------------------------
+-- Table structure for tb_bookstock
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_bookstock`;
+CREATE TABLE `tb_bookstock` (
+  `isbn` varchar(10) DEFAULT NULL,
+  `stock` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of tb_bookstock
+-- ----------------------------
+INSERT INTO `tb_bookstock` VALUES ('978-124-24', '0');
